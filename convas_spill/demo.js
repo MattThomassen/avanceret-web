@@ -14,8 +14,10 @@ console.log(dx, "dx");
 var paddleHeight = 6;
 var paddleWidth = 100;
 var paddleX = (canvas.width-paddleWidth)/2;
+
 var rightPressed = false;
 var leftPressed = false;
+
 var brickRowCount = 9;
 var brickColumnCount = 7;
 var brickWidth = 95;
@@ -24,15 +26,15 @@ var brickPadding = 10;
 var brickOffsetTop = 30;
 var brickOffsetLeft = 30;
 var score = 0;
-var lives = 10;
+var lives = 5;
 
-// var bricks = [];
-var bricks = [
-    [1,1,1,1,1,1,1,2],
-    [1,1,3,1,0,1,1,1],
-    [2,1,2,1,2,1,0,1],
-    [1,2,1,1,0,3,1,1]
-]
+var bricks = [];
+// var bricks = [
+//     [1,1,1,1,1,1,1,2],
+//     [1,1,3,1,0,1,1,1],
+//     [2,1,2,1,2,1,0,1],
+//     [1,2,1,1,0,3,1,1]
+// ]
 for(c=0; c<brickColumnCount; c++) {
     bricks[c] = [];
     for(r=0; r<brickRowCount; r++) {
